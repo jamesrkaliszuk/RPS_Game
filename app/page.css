@@ -1,0 +1,46 @@
+.itemContainer {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgb(103, 105, 104);
+  opacity: 0.5;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.choiceImg {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: fill;
+  object-position: center;
+}
+
+.rock:hover {
+  /* background: rgb(139, 160, 219); */
+  opacity: 1;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  scale: 1.1;
+  -webkit-animation: vibrate-3 0.5s linear infinite both;
+  animation: vibrate-3 0.5s linear infinite both;
+}
+
+.paper:hover {
+  /* background: rgb(139, 160, 219); */
+  opacity: 1;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  scale: 1.1;
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+.scissor:hover {
+  /* background: rgb(139, 160, 219); */
+  opacity: 1;
+  transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  scale: 1.1;
+  -webkit-animation: blink-2 500ms infinite both;
+  animation: blink-2 500ms infinite both;
+}
